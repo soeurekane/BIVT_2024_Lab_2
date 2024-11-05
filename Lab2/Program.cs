@@ -28,7 +28,7 @@ public class Program
         //program.Task_2_4(5, 1, 2);
         //program.Task_2_5(10, 30);
         //program.Task_2_6(5);
-        program.Task_2_7(5);
+        //program.Task_2_7(5);
         //program.Task_2_8(5);
         //program.Task_2_9(10);
         //program.Task_2_10(10);
@@ -434,6 +434,17 @@ public class Program
         double answerLength = double.MaxValue;
 
         // code here
+        for (int i = 0; i < n; i++)
+        {
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            
+            if (answerLength > Math.Sqrt(a * a + b * b))
+            {
+                answerLength = Math.Sqrt(a * a + b * b);
+                answer = i + 1;
+            }
+        }
         
         // end
 
